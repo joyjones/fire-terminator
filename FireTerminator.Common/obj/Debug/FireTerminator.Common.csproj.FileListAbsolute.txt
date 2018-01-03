@@ -1,0 +1,10 @@
+E:\BaiduNetdiskDownload\FireTerminator\FireTerminator.Common\obj\Debug\FireTerminator.Common.csprojResolveAssemblyReference.cache
+E:\BaiduNetdiskDownload\FireTerminator\FireTerminator.Common\obj\Debug\FireTerminator.Common.Properties.Resources.resources
+E:\BaiduNetdiskDownload\FireTerminator\FireTerminator.Common\obj\Debug\FireTerminator.Common.UI.AboutBox.resources
+E:\BaiduNetdiskDownload\FireTerminator\FireTerminator.Common\obj\Debug\FireTerminator.Common.UI.EncProfileSelector.resources
+E:\BaiduNetdiskDownload\FireTerminator\FireTerminator.Common\obj\Debug\FireTerminator.Common.UI.HelpViewControl.resources
+E:\BaiduNetdiskDownload\FireTerminator\FireTerminator.Common\obj\Debug\FireTerminator.Common.UI.InputDialog.resources
+E:\BaiduNetdiskDownload\FireTerminator\FireTerminator.Common\obj\Debug\FireTerminator.Common.UI.MessageControl.resources
+E:\BaiduNetdiskDownload\FireTerminator\FireTerminator.Common\obj\Debug\FireTerminator.Common.UI.PrintViewControl.resources
+E:\BaiduNetdiskDownload\FireTerminator\FireTerminator.Common\obj\Debug\FireTerminator.Common.UI.RibbonApplicationUserControl.resources
+E:\BaiduNetdiskDownload\FireTerminator\FireTerminator.Common\obj\Debug\FireTerminator.Common.csproj.GenerateResource.Cache

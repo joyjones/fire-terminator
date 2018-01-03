@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DBE885C8-9632-40C4-B7B6-57DCE6E4B91D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FireTerminator.Common</RootNamespace>
+    <AssemblyName>FireTerminator.Common</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DirectShowLib-2005, Version=2.0.0.0, Culture=neutral, PublicKeyToken=67e7b740cdfc2d3f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\DirectShowLib-2005.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.WMEncoderLib, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Interop.WMEncoderLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\FMOD\fmod.cs" />
+    <Compile Include="Audio\FMOD\fmod_dsp.cs" />
+    <Compile Include="Audio\FMOD\fmod_errors.cs" />
+    <Compile Include="Audio\FMOD\fmod_memoryinfo.cs" />
+    <Compile Include="Audio\SoundChannel.cs" />
+    <Compile Include="Audio\SoundChannel_FMOD.cs" />
+    <None Include="Audio\SoundChannel_MCI.cs" />
+    <Compile Include="Audio\SoundPlayer.cs" />
+    <Compile Include="Audio\SoundPlayer_FMOD.cs" />
+    <None Include="Audio\SoundPlayer_MCI.cs" />
+    <Compile Include="Elements\ElementInfo_TipText.cs" />
+    <Compile Include="Elements\ElementInfo_Audio.cs" />
+    <Compile Include="Elements\ElementInfo_Waterbag.cs" />
+    <Compile Include="GraphicsRenderer.cs" />
+    <Compile Include="Operations\Transition_Element.cs" />
+    <Compile Include="PlayCenter.cs" />
+    <Compile Include="ProductInfo.cs" />
+    <Compile Include="Properties\CommonAssemblyInfo.cs" />
+    <Compile Include="RenderResources\CubicCurveRibbon.cs" />
+    <Compile Include="RenderResources\ResourceInfo_Audio.cs" />
+    <Compile Include="Elements\ElementGroup.cs" />
+    <Compile Include="RenderResources\CubicCurve.cs" />
+    <Compile Include="SecurityGrandDog.cs" />
+    <Compile Include="Structures\AppLogger.cs" />
+    <Compile Include="Structures\ProjectReferrencer.cs" />
+    <Compile Include="Structures\JudgementSettings.cs" />
+    <Compile Include="UI\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EncProfileSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\EncProfileSelector.Designer.cs">
+      <DependentUpon>EncProfileSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VideoRecorder.cs" />
+    <Compile Include="Operations\EditViewOperations.cs" />
+    <Compile Include="ProjectDesc.cs" />
+    <Compile Include="RenderResources\ResourceInfo_StaticImage.cs" />
+    <Compile Include="RenderResources\ResourceInfo_BackgroundImage.cs" />
+    <Compile Include="RenderResources\ResourceInfo_AnimImage.cs" />
+    <Compile Include="RenderResources\ResourceInfo_Video.cs" />
+    <Compile Include="RenderResources\ResourceInfo_Dummy.cs" />
+    <Compile Include="RenderResources\DSVideoPlayer.cs" />
+    <Compile Include="Operations\Operation_Element_Trans.cs" />
+    <Compile Include="Elements\ElementInfo_Video.cs" />
+    <Compile Include="Elements\ElementInfo_Mask.cs" />
+    <Compile Include="Services\BaseFileTransmissionService.cs" />
+    <Compile Include="Services\IFileTransmissionService.cs" />
+    <Compile Include="Transitions\ElementTransform_Hidden.cs" />
+    <Compile Include="Transitions\ElementTransitionInfo.cs" />
+    <Compile Include="Transitions\ElementTransform_Alpha.cs" />
+    <Compile Include="Transitions\ElementTransform_Rotation.cs" />
+    <Compile Include="Transitions\ElementTransform_Scale.cs" />
+    <Compile Include="Transitions\ElementTransform_Move.cs" />
+    <Compile Include="TreeListNodeObject.cs" />
+    <Compile Include="Services\ILoginService.cs" />
+    <Compile Include="Services\IMainService.cs" />
+    <Compile Include="Services\ServerHost.cs" />
+    <Compile Include="Structures\LoginUserInfo.cs" />
+    <Compile Include="Structures\RegisteredUserInfo.cs" />
+    <Compile Include="Structures\UserTaskGroup.cs" />
+    <Compile Include="Transitions\RenderingRectangle.cs" />
+    <Compile Include="Transitions\TransitionRange.cs" />
+    <Compile Include="Transitions\TransitionTimeRuler.cs" />
+    <Compile Include="Transitions\TransitionLine.cs" />
+    <Compile Include="Operations\Operation_Element.cs" />
+    <Compile Include="Elements\ElementInfo_StaticImage.cs" />
+    <Compile Include="Elements\ElementInfo_AnimImage.cs" />
+    <Compile Include="Elements\ElementInfo_BackgroundImage.cs" />
+    <Compile Include="CommonMethods.cs" />
+    <Compile Include="Defintions.cs" />
+    <Compile Include="Elements\ElementInfo.cs" />
+    <Compile Include="Transitions\ElementTransform.cs" />
+    <Compile Include="Operations\OperationHistory.cs" />
+    <Compile Include="Options.cs" />
+    <Compile Include="ProjectDoc.cs" />
+    <Compile Include="ProjectInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RenderResources\ResourceGroup.cs" />
+    <Compile Include="RenderResources\ResourceInfo.cs" />
+    <Compile Include="SceneInfo.cs" />
+    <Compile Include="TaskInfo.cs" />
+    <Compile Include="Transitions\TransitionGraphics.cs" />
+    <Compile Include="UI\BackstageViewLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\HelpViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\HelpViewControl.designer.cs">
+      <DependentUpon>HelpViewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\InputDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\InputDialog.Designer.cs">
+      <DependentUpon>InputDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MessageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\MessageControl.Designer.cs">
+      <DependentUpon>MessageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MRUArrayList.cs" />
+    <Compile Include="UI\PrintViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\PrintViewControl.designer.cs">
+      <DependentUpon>PrintViewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RecentViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\RecentViewControl.designer.cs">
+      <DependentUpon>RecentViewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RibbonApplicationUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\RibbonApplicationUserControl.designer.cs">
+      <DependentUpon>RibbonApplicationUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TransitionController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\TransitionController.designer.cs">
+      <DependentUpon>TransitionController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewportInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\EncProfileSelector.resx">
+      <DependentUpon>EncProfileSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\HelpViewControl.resx">
+      <DependentUpon>HelpViewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\InputDialog.resx">
+      <DependentUpon>InputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MessageControl.resx">
+      <DependentUpon>MessageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PrintViewControl.resx">
+      <DependentUpon>PrintViewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\RecentViewControl.resx">
+      <DependentUpon>RecentViewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\RibbonApplicationUserControl.resx">
+      <DependentUpon>RibbonApplicationUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TransitionController.resx">
+      <DependentUpon>TransitionController.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Code_Central.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact_Us.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Online_Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cover_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cut_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paste_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddFile_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deleted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowMinus.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowPlus.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hand.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pan.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rotate.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DefaultPRX.prx" />
+    <None Include="Resources\Zoom.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

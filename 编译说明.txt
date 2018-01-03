@@ -1,0 +1,20 @@
+软件环境需求：
+1、安装 Microsoft Visual Studio 2008，并安装SP1补丁
+2、安装 DevExpress 12.1.5 并运行安装注册程序进行破解
+3、安装 Microsoft XNA Game Studio 3.1（XNAGS31_setup.exe）
+
+目录说明：
+bin：生成目录（默认携带的为编译及运行时必要依赖的文件）
+FireTerminator.Client：客户端工程模块
+FireTerminator.Common：公共模块
+FireTerminator.Editor：编辑器工程模块
+FireTerminator.Judge：判定客户端工程模块
+FireTerminator.Launch：启动工程模块
+FireTerminator.Server：服务端工程模块
+FireTerminator.SinkWriter：视频录屏工程模块
+
+解决方案文件：FireTerminator.sln
+
+加密狗用户口令为：
+wujingxueyuan@langfang
+新增加的加密狗需在开发套件的“开发商工具”中设置一下此用户密码
